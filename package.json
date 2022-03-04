@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-nanoid-template-tag",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "insomnia": {
     "name": "random-from-set-template",
     "displayName": "Random from set plugin", 
@@ -27,5 +27,11 @@
   "author": {
     "name": "Valentino Losito",
     "url": "https://github.com/valex91"
-  }
+  },
+  "keywords": [
+    "insomnia",
+    "insomnia-plugin",
+    "random",
+    "random template string"
+  ]
 }
