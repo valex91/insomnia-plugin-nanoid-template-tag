@@ -12,7 +12,7 @@
   "scripts": {
     "build": "npm run bundle && npm run moveInDist",
     "prepublish": "npm run bundle && npm run moveInDist",
-    "moveInDist": "cp ./package.json ./dist",
+    "moveInDist": "cp ./package.json ./dist && cp ./README.md ./dist",
     "bundle": "npx esbuild ./src/main.ts --bundle --format=cjs --outfile=./dist/main.js"
   },
   "main": "main.js",
