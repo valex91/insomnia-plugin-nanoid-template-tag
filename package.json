@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-nanoid-template-tag",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "insomnia": {
     "name": "random-from-set-template",
     "displayName": "Random from set plugin", 
