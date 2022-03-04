@@ -1,0 +1,31 @@
+{
+  "name": "insomnia-plugin-nanoid-template-tag",
+  "version": "1.0.1",
+  "insomnia": {
+    "name": "random-from-set-template",
+    "displayName": "Random from set plugin", 
+    "description": "This plugin allow the use in the template of a request the powerful random api from nanoid",
+    "publisher": {
+      "name": "valex91"
+    }
+  },
+  "scripts": {
+    "build": "npm run bundle && npm run moveInDist",
+    "prepublish": "npm run bundle && npm run moveInDist",
+    "moveInDist": "cp ./package.json ./dist",
+    "bundle": "npx esbuild ./src/main.ts --bundle --format=cjs --outfile=./dist/main.js"
+  },
+  "main": "main.js",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "esbuild": "^0.14.25",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "nanoid": "^3.3.1"
+  },
+  "author": {
+    "name": "Valentino Losito",
+    "url": "https://github.com/valex91"
+  }
+}
